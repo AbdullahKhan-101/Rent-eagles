@@ -1,0 +1,45 @@
+@import url(./custom.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply lg:text-[3rem] leading-[60px] sm:text-[2.5rem] text-[2rem] capitalize font-bold;
+}
+.lg_heading {
+  @apply lg:text-[56px] sm:text-5xl text-4xl font-bold;
+}
+.para {
+  @apply pb-3 !leading-6 lg:text-2xl text-lg font-bold max-w-fit;
+}
+.section_pb {
+  @apply pb-16 lg:pb-28;
+}
+.section_pt {
+  @apply pt-16 lg:pt-28;
+}
+.transition {
+  @apply transition-all duration-300 ease-out;
+}
+
+/* scrollbar */
+.custom_scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.custom_scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f7e1f8;
+  border-radius: 8px;
+}
+
+/* Handle */
+.custom_scroll::-webkit-scrollbar-thumb {
+  background: #cdcbcb;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+.custom_scroll::-webkit-scrollbar-thumb:hover {
+  background: #c4c3c3;
+}
